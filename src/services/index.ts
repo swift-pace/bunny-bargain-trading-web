@@ -4,5 +4,6 @@ import { ContentManagementAPI } from "./api/ContentManagement/ContentManagement.
 
 const UserManagementService = ApiContainer.get(UserManagementAPI)
 const ContentManagementService = ApiContainer.get(ContentManagementAPI)
+const SocketUDPService = ApiContainer.get(ContentManagementAPI)
 
-export { UserManagementService, ContentManagementService }
+export { UserManagementService, ContentManagementService, SocketUDPService }
