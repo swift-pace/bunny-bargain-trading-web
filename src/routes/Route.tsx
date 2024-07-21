@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom"
-import HomeView from "../views/Home"
+import HomeView from "../pages/Home"
 import UserAccountRoute from "./UserAccountRoute"
 
 const router = createBrowserRouter([

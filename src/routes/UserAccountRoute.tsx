@@ -1,5 +1,5 @@
 import { RouteObject } from "react-router-dom"
-import LoginView from "../views/Login"
+import LoginView from "../pages/Login"
 
 const UserAccountRoute: RouteObject[] = [
     {
