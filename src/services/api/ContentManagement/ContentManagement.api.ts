@@ -1,12 +1,12 @@
-import { Injectable } from "../../container"
+import { Injectable } from "../../container";
 
 @Injectable()
 export class ContentManagementAPI {
     constructor() {}
 
     public createContent() {
-        console.log("content created!")
+        console.log("content created!");
 
-        return
+        return;
     }
 }

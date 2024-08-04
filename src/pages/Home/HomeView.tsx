@@ -1,16 +1,16 @@
-import React from "react"
-import { UserManagementService, ContentManagementService } from "@Services"
+import React from "react";
+import { UserManagementService, ContentManagementService } from "@Services";
 
 function HomeView() {
-    const { createUser, getUserAccount } = UserManagementService
-    const { createContent } = ContentManagementService
+    const { createUser, getUserAccount } = UserManagementService;
+    const { createContent } = ContentManagementService;
 
     const handleCreateUser = () => {
-        createUser()
-        createContent()
-        const userAccountInfo = getUserAccount()
-        console.log(userAccountInfo)
-    }
+        createUser();
+        createContent();
+        const userAccountInfo = getUserAccount();
+        console.log(userAccountInfo);
+    };
 
     return (
         <React.Fragment>
@@ -18,7 +18,7 @@ function HomeView() {
             <br />
             <button onClick={() => handleCreateUser()}>Click</button>
         </React.Fragment>
-    )
+    );
 }
 
-export default HomeView
+export default HomeView;

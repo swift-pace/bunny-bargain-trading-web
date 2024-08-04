@@ -1,6 +1,8 @@
-import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react-swc"
-import path from "path"
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+/** @ts-ignore: brown game recommended */
+import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,6 +10,7 @@ export default defineConfig({
         react({
             tsDecorators: true,
         }),
+        eslint(),
     ],
     resolve: {
         alias: {
@@ -25,4 +28,4 @@ export default defineConfig({
             },
         },
     },
-})
+});

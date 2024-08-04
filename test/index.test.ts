@@ -1,10 +1,10 @@
 // test/index.test.ts
-import { describe, expect, it } from "bun:test"
+import { describe, expect, it } from "bun:test";
 
 type HelloPirateResponse = {
-    id: string
-    message: string
-}
+    id: string;
+    message: string;
+};
 
 describe("Test call an API", () => {
     it("Hello rust actix web", async () => {
@@ -19,13 +19,13 @@ describe("Test call an API", () => {
                     message: "Cpt. Jack",
                 }),
             }
-        ).then((res) => res.json() as Promise<HelloPirateResponse>)
+        ).then((res) => res.json() as Promise<HelloPirateResponse>);
 
-        const { message } = response
+        const { message } = response;
 
-        expect(message).toBe("Ahoy! Cpt. Jack")
-    })
-})
+        expect(message).toBe("Ahoy! Cpt. Jack");
+    });
+});
 
 describe("Test call an API", () => {
     it("echo", async () => {
@@ -40,20 +40,20 @@ describe("Test call an API", () => {
                     message: "My Name is Bond, James Bond",
                 }),
             }
-        ).then((res) => res.json() as Promise<HelloPirateResponse>)
+        ).then((res) => res.json() as Promise<HelloPirateResponse>);
 
-        const { message } = response
+        const { message } = response;
 
-        expect(message).toBe("My Name is Bond, James Bond")
-    })
-})
+        expect(message).toBe("My Name is Bond, James Bond");
+    });
+});
 
 describe("Test call an API", () => {
     it("rust actix health check!", async () => {
         const response = await fetch(
             new Request("http://localhost:8080/health")
-        ).then((res) => res.status)
+        ).then((res) => res.status);
 
-        expect(response).toBe(200)
-    })
-})
+        expect(response).toBe(200);
+    });
+});
