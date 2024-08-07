@@ -1,6 +1,6 @@
 import React from "react";
 
-function LoginView() {
+function Login() {
     return (
         <React.Fragment>
             <span>Login Page</span>
@@ -8,4 +8,4 @@ function LoginView() {
     );
 }
 
-export default LoginView;
+export default Login;

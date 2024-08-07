@@ -1,7 +1,7 @@
 import React from "react";
 import { UserManagementService, ContentManagementService } from "@Services";
 
-function HomeView() {
+function Home() {
     const { createUser, getUserAccount } = UserManagementService;
     const { createContent } = ContentManagementService;
 
@@ -21,4 +21,4 @@ function HomeView() {
     );
 }
 
-export default HomeView;
+export default Home;

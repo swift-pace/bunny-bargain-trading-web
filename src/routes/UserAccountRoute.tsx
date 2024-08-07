@@ -1,10 +1,10 @@
 import { RouteObject } from "react-router-dom";
-import LoginView from "../pages/Login";
+import Login from "../pages/Login";
 
 const UserAccountRoute: RouteObject[] = [
     {
         path: "/login",
-        element: <LoginView />,
+        element: <Login />,
     },
 ];
 
